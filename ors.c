@@ -1,16 +1,16 @@
 #include "monty.h"
 
 /**
- * err - Prints appropiate error messages determined by their error code.
- * @error_code: The error codes are the following:
- * (1) => The user does not give any file or more than one file to the program.
- * (2) => The file provided is not a file that can be opened or read.
- * (3) => The file provided contains an invalid instruction.
- * (4) => When the program is unable to malloc more memory.
- * (5) => When the parameter passed to the instruction "push" is not an int.
- * (6) => When the stack it empty for pint.
- * (7) => When the stack it empty for pop.
- * (8) => When stack is too short for operation.
+ * err - Prnt right error msg detrmind by its errr code.
+ * @error_code: those are the errors codes:
+ * (1) => Usr hasn't gave file or more than one file.
+ * (2) => Provided file cannot be readable or even open it.
+ * (3) => Provided fyle doesn't have right instruction.
+ * (4) => In case program is unable to malloc more memory.
+ * (5) => In case the settings passed to the instrcn "push" is not an int.
+ * (6) => In case the stack is empty for pint.
+ * (7) => In case the stack is empty for pop.
+ * (8) => In case stack is short for op.
  */
 void err(int error_code, ...)
 {
@@ -47,12 +47,12 @@ void err(int error_code, ...)
 }
 
 /**
- * more_err - handles errors.
- * @error_code: The error codes are the following:
- * (6) => When the stack it empty for pint.
- * (7) => When the stack it empty for pop.
- * (8) => When stack is too short for operation.
- * (9) => Division by zero.
+ * more_err - error handling.
+ * @error_code: Here are error codes:
+ * (6) => In case the stack it empty for pint.
+ * (7) => In case the stack it empty for pop.
+ * (8) => In case stack is too short for operation.
+ * (9) => Divided / 0 zero.
  */
 void more_err(int error_code, ...)
 {
@@ -88,10 +88,10 @@ void more_err(int error_code, ...)
 }
 
 /**
- * string_err - handles errors.
- * @error_code: The error codes are the following:
- * (10) ~> The number inside a node is outside ASCII bounds.
- * (11) ~> The stack is empty.
+ * string_err - errors handling.
+ * @error_code: Here are the error codes:
+ * (10) ~> Number in a node is outside ASCII bonds.
+ * (11) ~> Empty Stack.
  */
 void string_err(int error_code, ...)
 {
